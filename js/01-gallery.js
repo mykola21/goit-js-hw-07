@@ -31,7 +31,7 @@ function onGaleryClick(evt) {
    if(target.nodeName !== "IMG"){
     return;
   }
-  const instance = basicLightbox.create(`<img src="${target}" width="800" height="600"/>`);
+  const instance = basicLightbox.create(`<img src="${target.dataset.sourse}" width="800" height="600"/>`);
   instance.show();
   }
   
